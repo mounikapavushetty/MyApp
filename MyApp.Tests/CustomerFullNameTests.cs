@@ -7,7 +7,7 @@ namespace MyApp.Tests
     public class CustomerFullNameTests
     {
         [Theory]
-        [InlineAutoData("Rahul", "P", "Nath", "Rahul Nath")]
+        [InlineAutoData("Rahul", "P", "Nath", "Rahul P Nath")]
         [InlineAutoData("Microsoft", "Visual", "Studio 2019", "Microsoft Visual Studio 2019")]
         public void FullNameReturnsExpected(
             string firstName, string middleName,
