@@ -350,3 +350,4 @@ healthchecksdb
 appsettings.Development.local.json
 appsettings.Tests.local.json
 dbup.appsettings.local.json
+/MyApp/ClientApp/test-report.xml
