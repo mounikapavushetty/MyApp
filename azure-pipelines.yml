@@ -48,9 +48,11 @@ steps:
     command: 'custom'
     workingDir: 'MyApp\ClientApp'
     customCommand: 'run test'
+  condition: succeededOrFailed()
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/test-report.xml'
     failTaskOnFailedTests: true
+  condition: succeededOrFailed()
