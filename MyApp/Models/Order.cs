@@ -7,5 +7,6 @@ namespace MyApp.Models
 {
     public class Order
     {
+        public string CustomerName { get; set; }
     }
 }
