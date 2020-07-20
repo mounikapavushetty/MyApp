@@ -7,7 +7,7 @@ namespace MyApp.Tests
     public class ShippingConditionTests
     {
         [Theory]
-        [InlineAutoData(22, true)]
+        [InlineAutoData(22, false)]
         [InlineAutoData(40, true)]
         [InlineAutoData(21, false)]
         [InlineAutoData(11, false)]
