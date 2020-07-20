@@ -11,7 +11,7 @@ namespace MyApp
         public bool Check(Customer customer)
         {
             return customer.Addresses.Any() &&
-                customer.Age > 21;
+                customer.Age > 25;
         }
     }
 }
