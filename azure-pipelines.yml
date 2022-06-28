@@ -42,6 +42,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Agent.TempDirectory)\TestResults'
+    ArtifactName: 'test-results'
+    publishLocation: 'Container'
 - task: Npm@1
   displayName: "Javascript Unit tests"
   inputs:
